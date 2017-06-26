@@ -16,7 +16,7 @@ require ('select.php');
 <br>
 <br>
 <input placeholder="Nombre" type="name" id="nombre">
-<input placeholder="Cantidad" type="name" id="dinero">
+<input placeholder="Cantidad" type="name" id="dinero2">
 <button onclick="send()">Agregar</button>
 <div id="demo"></div>
 </body>
@@ -61,7 +61,7 @@ require ('select.php');
 	function send(){
 		var name = document.getElementById('nombre');
 		var nombre = name.value;
-		var texto = document.getElementById('dinero');
+		var texto = document.getElementById('dinero2');
 		var dinero = texto.value;
 		var url = "agregar.php";
 		url = url + "?nombre="+nombre+"&dinero="+dinero;
@@ -73,7 +73,6 @@ require ('select.php');
     };
 		xhttp.open("GET", url, true);
 		xhttp.send();
-	}
 	}
 	
 </script>
